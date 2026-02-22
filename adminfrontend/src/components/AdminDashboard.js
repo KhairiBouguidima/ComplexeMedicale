@@ -25,7 +25,6 @@ const AdminDashboard = () => {
   });
   const [view, setView] = useState("overview");
   const [dataList, setDataList] = useState([]);
-  const [loading, setLoading] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
   const [showModal, setShowModal] = useState(false);
 
