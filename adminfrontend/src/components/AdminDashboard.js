@@ -35,6 +35,8 @@ const AdminDashboard = () => {
 
   // 2. Initialisation incluant les factures et le calcul du revenu
   useEffect(() => {
+    document.title = "Admin Dashboard | Complexe Médicale";
+
     const initStats = async () => {
       const types = [
         "doctors",

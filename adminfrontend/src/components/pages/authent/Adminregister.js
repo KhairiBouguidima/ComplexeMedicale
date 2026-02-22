@@ -1,9 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from "react";
 import { useNavigate, Link } from 'react-router-dom';
 import { UserPlus, User, ShieldCheck, Lock, ArrowLeft } from 'lucide-react';
 import axios from 'axios';
 
 const AdminRegister = () => {
+  useEffect(() => {
+    document.title = "Complexe Médicale";
+  }, []);
   const [formData, setFormData] = useState({ username: '', cin: '', password: '' });
   const navigate = useNavigate();
 
